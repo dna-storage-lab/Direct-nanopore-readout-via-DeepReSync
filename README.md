@@ -69,7 +69,7 @@ The following open-source C/C++ libraries are used in the software:
 │   ├── bin/                    # Compiled executables
 │   ├── include/                # C/C++ headers
 │   ├── lib/                    # External decoding libraries
-│   ├── reference/              # Primers, encoded sequences, and encoded bits
+│   ├── reference/              # original_data_files, encoded sequences, and encoded codewords
 │   ├── scripts/
 │   │   ├── deepresync_infer_posteriors.py
 │   │   ├── run_indel_correction.sh
