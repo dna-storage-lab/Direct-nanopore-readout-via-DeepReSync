@@ -62,7 +62,6 @@ The following open-source C/C++ libraries are used in the software:
 │   ├── utils/
 │   │   ├── coding.py           # Half-watermark encoding utilities
 │   │   ├── data.py             # PyTorch datasets
-│   │   ├── simulate_dataset.py # Offline simulated-dataset entry point
 │   │   └── simulator.py        # Twist-Nanopore data simulator
 │   ├── train.sh                # Default training command
 │   └── train_estimator.py      # Training entry point
@@ -80,7 +79,7 @@ The following open-source C/C++ libraries are used in the software:
 │   ├── src/                    # C/C++ recovery implementations
 │   ├── build.sh                # Recovery binary build script
 │   └── recovery.sh             # Main recovery entry point
-├── sequencing_data/            # Sequencing datasets
+├── sequencing_data/            # Sequencing datasets for recovery test
 │   ├── NGS/
 │   ├── ONT_HAC/
 │   ├── ONT_FAST/
@@ -90,8 +89,7 @@ The following open-source C/C++ libraries are used in the software:
 
 ## Source Data
 
-recovery test, and save the assembled reads in the corresponding `sequencing_data/NGS` directory.
-The source data are available on the Sequence Read Archive (SRA) under accession no. xxx. Download the FASTQ files to the corresponding subdirectories under sequencing_data. For NGS data, merge the paired-end reads with PEAR before data recovery.
+The source data are available on the Sequence Read Archive (SRA) under accession no. xxx. Download the FASTQ files to the corresponding subdirectories under sequencing_data. For NGS data, the paired-end reads should be merged with PEAR before data recovery.
 
 1. ONT sequencing data (FAST base calling)
    - UEP_Pool_1_FAST.fastq
