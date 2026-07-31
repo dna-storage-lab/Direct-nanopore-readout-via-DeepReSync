@@ -33,7 +33,7 @@ The decoding pipeline reconstructs original data from sequencing reads with four
 
 The software is implemented in C, C++, and Python, with DeepReSync training and inference implemented in PyTorch. Executable calls are organized into modular shell scripts, enabling easy and flexible deployment across different Linux distributions.
 
-**Software Requirements**
+## Requirements
 
 Install the following dependencies on Linux:
 
