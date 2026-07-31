@@ -89,7 +89,7 @@ The following open-source C/C++ libraries are used in the software:
 
 ## Source Data
 
-The source data are available on the Sequence Read Archive (SRA) under accession no. xxx. Download the FASTQ files to the corresponding subdirectories under sequencing_data. For NGS data, the paired-end reads should be merged with PEAR before data recovery.
+The source data are available on the Sequence Read Archive (SRA) under accession number [PRJNA1505625](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1505625). Download the FASTQ files to the corresponding subdirectories under sequencing_data. For NGS data, the paired-end reads should be merged with PEAR before data recovery.
 
 1. ONT sequencing data (FAST base calling)
    - UEP_Pool_1_FAST.fastq
