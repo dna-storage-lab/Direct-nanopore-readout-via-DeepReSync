@@ -94,31 +94,15 @@ The source data are available on the Sequence Read Archive (SRA) under accession
 1. ONT sequencing data (FAST base calling)
    - UEP_Pool_1_FAST.fastq
    - UEP_Pool_2_FAST.fastq
-   - UEP_Pool_3_FAST.fastq
-   - UEP_Pool_4_FAST.fastq
-   - UEP_Pool_5_FAST.fastq
-   - UEP_Pool_6_FAST.fastq
 2. ONT sequencing data (HAC base calling)
    - UEP_Pool_1_HAC.fastq
    - UEP_Pool_2_HAC.fastq
-   - UEP_Pool_3_HAC.fastq
-   - UEP_Pool_4_HAC.fastq
-   - UEP_Pool_5_HAC.fastq
-   - UEP_Pool_6_HAC.fastq
 3. ONT sequencing data (SUP base calling)
    - UEP_Pool_1_SUP.fastq
    - UEP_Pool_2_SUP.fastq
-   - UEP_Pool_3_SUP.fastq
-   - UEP_Pool_4_SUP.fastq
-   - UEP_Pool_5_SUP.fastq
-   - UEP_Pool_6_SUP.fastq
 4. Illumina sequencing data (PE250)
    - UEP_Pool_1_Illumina_R1/R2.fastq
    - UEP_Pool_2_Illumina_R1/R2.fastq
-   - UEP_Pool_3_Illumina_R1/R2.fastq
-   - UEP_Pool_4_Illumina_R1/R2.fastq
-   - UEP_Pool_5_Illumina_R1/R2.fastq
-   - UEP_Pool_6_Illumina_R1/R2.fastq
 
 ## Usage Example
 
@@ -132,7 +116,7 @@ bash training/train.sh
 
 ### Recovery
 
-For example, recovery/recovery.sh recovers UEP-Pool-1 from ONT FAST reads at 15× coverage. Build and run the recovery program as follows:
+For example, recovery/recovery.sh recovers UEP-Pool-1 from ONT FAST reads. Build and run the recovery program as follows:
 
 ```bash
 bash recovery/build.sh
@@ -241,7 +225,7 @@ bash "recovery/scripts/run_recover.sh" \
 - `decoded_bits_file` - decoded bits used to recover user data (`${decoding_results_dir}/src_information.txt`)
 - `user_data` - recovered user data
 
-Recovery workflows for other oligo pools (UEP-Pool-2 to UEP-Pool-6) are provided and follow the same structure and usage as the UEP-Pool-1 example.
+Recovery workflows for UEP-Pool-1 and UEP-Pool-2 under the available ONT and NGS conditions follow the same structure and usage.
 
 ## Note
 
