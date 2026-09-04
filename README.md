@@ -234,6 +234,9 @@ For details of the data simulation, please refer to the following literature:
 - O. Sabary et al., SOLQC: Synthetic oligo library quality control tool. Bioinformatics 37, 720–722 (2021).
 - D. Bar-Lev, I. Orr, O. Sabary, T. Etzion, E. Yaakobi, Scalable and robust DNA-based storage via coding theory and deep learning. Nat. Mach. Intell. 7, 639–649 (2025).
 
+For the implementation of the forward-backward algorithm, please refer to the following work: 
+- J. Haghighat, T. M. Duman, Half-Marker codes for deletion channels with applications in DNA storage. IEEE Commun. Lett. 29, 1639–1643 (2025).
+
 ## License
 
 This project is licensed under the MIT License.
