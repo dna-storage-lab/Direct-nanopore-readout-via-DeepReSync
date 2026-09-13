@@ -230,8 +230,6 @@ Recovery workflows for UEP-Pool-1 and UEP-Pool-2 under the available ONT and NGS
 ## Note
 
 For details of the data simulation, please refer to the following literature:
-
-- O. Sabary et al., SOLQC: Synthetic oligo library quality control tool. Bioinformatics 37, 720–722 (2021).
 - D. Bar-Lev, I. Orr, O. Sabary, T. Etzion, E. Yaakobi, Scalable and robust DNA-based storage via coding theory and deep learning. Nat. Mach. Intell. 7, 639–649 (2025).
 
 For the implementation of the forward-backward algorithm, please refer to the following work: 
