@@ -19,7 +19,7 @@
 Synthetic DNA offers exceptional density and durability for
 archival storage, but rapid nanopore readout remains limited by high
 insertion and deletion errors. Existing assembly-based strategies reduce
-readout errors while adding biochemical complexity. We propose a direct nanopore readout framework that combines unequal-error-protection (UEP) oligos with DeepReSync, a deep learning-based individual-read correction algorithm. In this framework, the index receives a clear watermark for reliable individual-read identification. The payload employs a low-redundancy half-watermark to preserve logical density. During readout, read-wise index identification groups reads. DeepReSync integrates data-driven sequence modeling with half-watermark supervision to produce resynchronized soft information for efficient multiple-copy consensus and global error correction.
+readout errors while adding biochemical complexity. We propose a deep learning-enabled direct nanopore readout framework using unequal error protection (UEP). In this framework, the index receives a clear watermark for reliable individual-read identification. The payload employs a low-redundancy half-watermark to preserve logical density. During readout, read-wise index identification groups reads. DeepReSync integrates data-driven sequence modeling with half-watermark supervision to produce resynchronized soft information for efficient multiple-copy consensus and global error correction.
 
 The decoding pipeline reconstructs original data from sequencing reads with four main steps:
 
