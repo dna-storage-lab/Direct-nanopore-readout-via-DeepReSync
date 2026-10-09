@@ -1,8 +1,8 @@
-# Direct nanopore readout of DNA data storage using unequal-error-protection oligos
+# Deep learning-enabled direct nanopore readout of DNA data storage using unequal error protection
 
 ## Table of Contents
 
-- [Direct nanopore readout of DNA data storage using unequal-error-protection oligos](#direct-nanopore-readout-of-dna-data-storage-using-unequal-error-protection-oligos)
+- [Deep learning-enabled direct nanopore readout of DNA data storage using unequal error protection](#direct-nanopore-readout-of-dna-data-storage-using-unequal-error-protection-oligos)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
   - [Requirements](#requirements)
