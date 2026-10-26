@@ -1,8 +1,8 @@
-# Direct nanopore readout of DNA data storage using unequal-error-protection oligos
+# Deep learning-enabled direct nanopore readout of DNA data storage using unequal error protection
 
 ## Table of Contents
 
-- [Direct nanopore readout of DNA data storage using unequal-error-protection oligos](#direct-nanopore-readout-of-dna-data-storage-using-unequal-error-protection-oligos)
+- [Deep learning-enabled direct nanopore readout of DNA data storage using unequal error protection](#direct-nanopore-readout-of-dna-data-storage-using-unequal-error-protection-oligos)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
   - [Requirements](#requirements)
@@ -19,7 +19,7 @@
 Synthetic DNA offers exceptional density and durability for
 archival storage, but rapid nanopore readout remains limited by high
 insertion and deletion errors. Existing assembly-based strategies reduce
-readout errors while adding biochemical complexity. We propose a direct nanopore readout framework that combines unequal-error-protection (UEP) oligos with DeepReSync, a deep learning-based individual-read correction algorithm. In this framework, the index receives a clear watermark for reliable individual-read identification. The payload employs a low-redundancy half-watermark to preserve logical density. During readout, read-wise index identification groups reads. DeepReSync integrates data-driven sequence modeling with half-watermark supervision to produce resynchronized soft information for efficient multiple-copy consensus and global error correction.
+readout errors while adding biochemical complexity. We propose a deep learning-enabled direct nanopore readout framework using unequal error protection (UEP). In this framework, the index receives a clear watermark for reliable individual-read identification. The payload employs a low-redundancy half-watermark to preserve logical density. During readout, read-wise index identification groups reads. DeepReSync integrates data-driven sequence modeling with half-watermark supervision to produce resynchronized soft information for efficient multiple-copy consensus and global error correction.
 
 The decoding pipeline reconstructs original data from sequencing reads with four main steps:
 
@@ -89,7 +89,7 @@ The following open-source C/C++ libraries are used in the software:
 
 ## Source Data
 
-The source data are available on the Sequence Read Archive (SRA) under accession number [PRJNA1505625](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1505625). Download the FASTQ files to the corresponding subdirectories under sequencing_data. For NGS data, the paired-end reads should be merged with PEAR before data recovery.
+The source data are available on the Sequence Read Archive (SRA) under accession number [PRJNA1505625](https://www.ncbi.nlm.nih.gov/bioproject?term=PRJNA1505625&cmd=DetailsSearch). Download the FASTQ files to the corresponding subdirectories under sequencing_data. For NGS data, the paired-end reads should be merged with PEAR before data recovery.
 
 1. ONT sequencing data (FAST base calling)
    - UEP_Pool_1_FAST.fastq
@@ -230,9 +230,10 @@ Recovery workflows for UEP-Pool-1 and UEP-Pool-2 under the available ONT and NGS
 ## Note
 
 For details of the data simulation, please refer to the following literature:
-
-- O. Sabary et al., SOLQC: Synthetic oligo library quality control tool. Bioinformatics 37, 720–722 (2021).
 - D. Bar-Lev, I. Orr, O. Sabary, T. Etzion, E. Yaakobi, Scalable and robust DNA-based storage via coding theory and deep learning. Nat. Mach. Intell. 7, 639–649 (2025).
+
+For the implementation of the forward-backward algorithm, please refer to the following work: 
+- J. Haghighat, T. M. Duman, Half-Marker codes for deletion channels with applications in DNA storage. IEEE Commun. Lett. 29, 1639–1643 (2025).
 
 ## License
 
